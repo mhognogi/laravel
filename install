@@ -5,3 +5,17 @@ https://www.howtoforge.com/tutorial/install-laravel-on-ubuntu-for-apache/
 mkldir auth
 php artisan make:auth
 php artisan serve --port=8080
+
+/var/www/html/project/app/Http/Controllers/Auth/LoginController.php //see
+/var/www/html/project/resources/views/auth/login.blade.php  //see
+
+.env //edit db credentials
+
+/var/www/html/project/app/Providers/AppServiceProvider.php 
+use Illuminate\Support\Facades\Schema;
+public function boot(){
+   schema::defaultStringLength(191);
+}
+
+php artisan migrate    
+    
