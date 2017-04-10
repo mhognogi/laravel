@@ -19,4 +19,4 @@ public function boot(){
 }
 
 php artisan migrate    
-    
+//restart all 
