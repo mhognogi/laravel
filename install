@@ -1,0 +1,7 @@
+//install
+https://www.howtoforge.com/tutorial/install-laravel-on-ubuntu-for-apache/
+
+// create login
+mkldir auth
+php artisan make:auth
+php artisan serve --port=8080
