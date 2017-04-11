@@ -31,7 +31,8 @@ Route::get('/list', 'HomeController@getList');
 /var/www/html/project/app/Http/Controllers/HomeController.php
 public function getList()
 {
-    return view('list');
+    $fullname = 'Hello Worlds';  
+    return view('list')->with('fullname', $fullname);
 }
 
 
