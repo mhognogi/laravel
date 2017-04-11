@@ -20,3 +20,18 @@ public function boot(){
 
 php artisan migrate    
 //restart all 
+
+http://localhost:8080/list
+/var/www/html/project/resources/views/list.blade.php 
+<div class="flex-center position-ref full-height">
+    List Page
+</div>
+/var/www/html/project/routes/web.php   
+Route::get('/list', 'HomeController@getList');
+/var/www/html/project/app/Http/Controllers/HomeController.php
+public function getList()
+{
+    return view('list');
+}
+
+
